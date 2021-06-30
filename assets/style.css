@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.dvdplayer {
+    position: relative;
+    width: 1365px;
+    height: 937px;
+}
+
+svg {
+    position: absolute;
+    width: 394px;
+    height: 180px;
+    fill: rgb(52, 200, 211);
+    animation: player 9s linear infinite alternate-reverse;
+}
+
+@keyframes player {
+    0% {
+        fill: royalblue;
+        top: 0px;
+        left: 550px;
+    }
+    25% {
+        fill: springgreen;
+        top: 780px;
+        left: 550px;
+    }
+    50% {
+        fill: mediumvioletred;
+        top: 0px;
+        left: 1300px;
+    }
+    75% {
+        fill: peru;
+        top: 440px;
+        left: 100px;
+    }
+    100% {
+        fill: yellowgreen;
+        top: 750px;
+        left: 0px;
+    }
+}
